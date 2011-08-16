@@ -1,0 +1,545 @@
+#savings-com-page{
+    font-family: tahoma, arial, sans-serif;
+    font-size: 14px;
+}
+#savings-com-page-logo{
+    border-bottom: 1px solid #D4D4D4;
+    text-align: right;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+#savings-com-page-logo span{
+    color: #444444;
+    font-weight: bold;
+}
+#savings-com-page-tabs-list{
+    float:left;
+    margin: 0;
+}
+#savings-com-page-navigation-tabs{
+    float: left;
+    width: 100%;
+}
+#savings-com-page-navigation-filters{
+    float: left;
+    width: 100%;
+}
+.savings-com-page-tab{
+    display: inline-block;
+    margin-right: 10px;
+}
+.savings-com-deal-item{
+    border: 1px solid #D4D4D4;
+    margin: 10px 0;
+    padding: 10px;
+    overflow: hidden;
+    font-family: tahoma, arial, sans-serif;
+    font-size: 15px;
+}
+.savings-com-deal-item div{
+    float: left;
+    
+}
+.savings-com-deal-merchant{
+    font-size: 12px;
+    line-height: 15px;
+    max-height: 60px;
+    text-align: center;
+    border: 1px solid #CFCFCF;
+    margin-bottom:0px;
+    margin-right:15px;
+}
+#savings-com-page .savings-com-breadcrumbs {
+	margin-bottom: 0;
+}
+.savings-com-breadcrumbs a:link {
+	color: black;
+	font-size: 12px;
+	text-decoration: none;
+}
+.savings-com-breadcrumbs a:hover {
+	text-decoration: underline;
+}
+.savings-com-deal-title{
+    width: 45%;
+    text-align: left;
+    color:black; font-size:14px
+}
+.savings-com-deal-title a{
+    font-family: tahoma, arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+.savings-com-deal-footer{
+}
+.savings-com-deal-code{
+    color: red;
+    font-weight: bold;
+    float: right !important;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: block;
+    height: 37px;
+    width: 120px;
+    text-align: right;
+}
+.savings-com-code-revealed{
+    color: #009900;
+}
+ul.savings-com-widget-list {
+    height:250px;
+    overflow:auto;
+    position:relative;
+    overflow: auto;
+    position: relative;
+    padding: 10px 0px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    border-left: 1px solid #cfcfcf;
+    margin-top:5px;
+}
+
+#savings-com-widget-homeus {
+  text-indent:-9999px;
+  background: url('images/logo-us.png') no-repeat left center;
+  cursor: pointer;
+  width:141px;
+  height:41px;
+  display:block;
+  float:left;
+  margin-right:20px;
+}
+
+#savings-com-widget-homeuk {
+  text-indent:-9999px;
+  background: url('images/uk_logo_small.png') no-repeat;
+  cursor: pointer;
+  width:141px;
+  height:41px;
+  display:block;
+  float:left;
+  margin-right:20px;
+  margin-left:20px;
+}
+
+#savings-com-widget-deals {
+  display:block; float:right; margin-top:10px; font-family: Tahoma; font-size: 14px;
+}
+
+li.savings-com-widget-item {
+  margin:5px; border-bottom: 1px solid #cfcfcf;
+}
+
+li.savings-com-widget-item a.savings-com-deal-merchant {
+  display:block; float:left; width:47%; margin-right: 20px; margin-left:0px !important; background:none!important;
+}
+
+li.savings-com-widget-item a.savings-com-deal-code {
+ display:block; float:left; width:66px; margin-right: 5px; text-indent:-9999px; height:30px;
+}
+li.savings-com-widget-item a.savings-com-deal-code span {
+ display:none;
+}
+li.savings-com-widget-item a.savings-com-deal-code.Get {
+ background: url(images/widget_buy.jpg) no-repeat; 
+}
+li.savings-com-widget-item a.savings-com-deal-code.Shop {
+ background: url(images/widget_shop.jpg) no-repeat; 
+}
+li.savings-com-widget-item a.savings-com-deal-code.Get.uk {
+ background: url(images/widget_buy_uk.png) no-repeat; 
+}
+li.savings-com-widget-item a.savings-com-deal-code.Shop.uk {
+ background: url(images/widget_shop_uk.png) no-repeat; 
+}
+
+li.savings-com-widget-item a.savings-com-deal-code.Get.revealed {
+ background: none !important; text-indent:0px !important; display:inline !important;
+}
+li.savings-com-widget-item a.savings-com-deal-code.Shop.revealed {
+ background: none !important; text-indent:0px !important; display:inline !important;
+}
+li.savings-com-widget-item a.savings-com-deal-code.revealed span{
+  display: inline !important;
+}
+
+
+li.savings-com-widget-item .savings-com-deal-title {
+   display:block; width:90%; margin: 5px 0; font-size:13px; background:none!important; color: #b01e1e; font-family: Tahoma;
+}
+
+.savings-com-deal-description{
+}
+
+
+
+
+
+/* TipTip CSS - Version 1.2 */
+
+#tiptip_holder {
+	display: none;
+	position: absolute;
+	top: -2px;
+	left: 13px;
+	z-index: 99999;
+}
+
+#tiptip_holder.tip_left {
+	left: -30px !important;
+}
+
+#tiptip_content {
+	font-size: 11px;
+	color: #000;
+	text-shadow: 0 1px #fff;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 0 8px;
+	background: url(images/tooltip-bg.png) repeat-x;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 24px;
+	border-right: 1px solid #bc9c39;
+	overflow: hidden;
+}
+@-moz-document url-prefix() {
+  #tiptip_content {
+     margin-top:1px;
+  }
+}
+
+.tip_left #tiptip_content, .tip_left_top #tiptip_content {
+  border-right: none !important;
+  border-left: 1px solid #bc9c39 !important;
+}
+
+#tiptip_arrow {
+	position: absolute;
+	height: 36px;
+	width: 36px;
+	background: url(images/tooltip-arrow.png) no-repeat left center;
+	margin: 0;
+	top: -11px;
+	left: 0;
+}
+
+#tiptip_holder.shop #tiptip_arrow {
+  background: url(images/tooltip-arrow2.png) no-repeat left center;
+  width:16px;
+}
+
+#tiptip_holder.shop #tiptip_content {
+  margin-left:2px;
+}
+
+#tiptip_holder.tip_left.shop #tiptip_content, #tiptip_holder.tip_left_top.shop #tiptip_content {
+  margin-left:47px;
+}
+
+.tip_left #tiptip_arrow, .tip_left_top #tiptip_arrow {
+	background: url(images/tooltip-arrow-right.png) no-repeat left center !important;
+}
+
+.tip_left.shop #tiptip_arrow, .tip_left_top.shop #tiptip_arrow {
+	background: url(images/tooltip-arrow2-right.png) no-repeat left center !important;
+	margin-left:260px !important;
+}
+
+@-moz-document url-prefix() {
+  .tip_left.shop #tiptip_arrow, .tip_left_top.shop #tiptip_arrow  {
+     margin-left:319px !important;
+  }
+}
+
+.tip_left_top #tiptip_content, .tip_right_top #tiptip_content {
+  margin-top:35px;
+}
+
+.tip_left_top #tiptip_arrow, .tip_right_top #tiptip_arrow {
+  margin-top:46px !important;
+  margin-right:15px !important;
+}
+
+.tip_left_top {
+  left:-35px !important;
+}
+
+
+ul.half {
+  width:40%;
+  float:left;
+}
+
+/* Begin style stuff not layout stuff*/
+#savings-com-page form p { position:relative }
+#savings-com-page label  { position:absolute; top:0; left:0; padding:7px}
+#savings-com-widget-wrap p input[type="text"] { 
+width: 130px;
+height: 20px;
+background: white;
+font-size: 12px;
+float: left;
+padding-left: 5px;}
+#savings-com-category-select {
+width:130px;
+float: right;
+}
+#savings-com-widget-wrap p { position:relative }
+#savings-com-widget-wrap label  { position:absolute; top:0; left:0; font-family: Tahoma; padding:3px 7px; line-height: 20px;}
+#savings-com-page input[type="text"] { width:300px; float:left; }
+#savings-com-page input[type="image"] { margin-top:3px; margin-bottom:5px; float: left;}
+#savings-com-page a.logo-link { float:right}
+#savings-com-page .logo-link img { width: 141px; margin-top:8px; }
+#savings-com-page ul.featured-categories {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#savings-com-page ul.featured-categories li {
+float: left;
+background: url(images/category-btn-bg.png) no-repeat top right;
+margin: 0 5px 0 0;
+padding: 0;
+height: 27px; margin-top:5px;
+list-style: none;
+}
+#savings-com-page ul.featured-categories li a {
+display: block;
+background: url(images/category-btn-left.png) no-repeat top left;
+line-height: 27px;
+padding: 0 10px;
+font-size: 11px;
+color: black;
+text-decoration: none;
+}
+#savings-com-page ul.featured-categories li a:hover {
+	color: #A20000;
+}
+#savings-com-page p.category-select {
+float:right; margin-bottom:0px; margin-top:4px
+}
+#savings-com-page p.category-select select {
+padding:3px
+}
+#savings-nav li {
+float: left;
+background: url(images/nav-bg.png) no-repeat top right;
+margin: 0 15px 0 0;
+padding: 0;
+height: 25px;
+}
+#savings-nav a {
+display: block;
+background: url(images/nav-left.png) no-repeat top left;
+line-height: 25px;
+padding: 0 10px;
+font-size: 13px;
+color: black;
+text-decoration: none;
+margin-left: -10px;
+}
+#savings-nav a.active {
+color:#a20000;
+}
+#savings-nav a:hover {
+color:#a20000;
+}
+#savings-nav {
+float: left;
+width: 100%;
+
+clear: both;
+border-bottom: 1px solid #CFCFCF;
+margin-bottom: 20px;
+margin-top:30px
+}
+#savings-nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+margin-left:10px
+}
+.savings-post {
+position: relative;
+padding: 15px;
+min-height: 90px;
+border: solid 1px #CFCFCF;
+clear: both;
+background: white;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+margin-bottom: 0px;
+margin-top:15px;
+}
+.merchant-page .savings-post {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+border-radius: 0px;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+min-height: 55px;
+}
+.savings-com-deal-footer {
+background: #E9E9E9 url(images/details-bg.png) repeat-x;
+background-position: 1px 0;
+border: 1px solid #CFCFCF;
+margin-bottom: 20px;
+padding:15px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+font-size:12px;
+}
+.savings-com-deal-footer p {
+float: none;
+clear: both;
+text-shadow: white 0 1px;
+font-size:12px; color: black;
+}
+#savings-com-pagination {
+text-align: center; padding-bottom:40px;margin-top: 15px; border-bottom: 1px solid #CFCFCF;
+}
+#savings-com-page a.details {
+  display: block; position:absolute; left:15px; width: 110px;
+bottom: 0; height: 24px;
+}
+#savings-com-page .savings-com-footer {
+  text-align:center;
+  font-size:12px;
+  padding-top: 15px;
+}
+#savings-com-page .savings-com-footer a:link {
+	color: black;
+	text-decoration: none;
+}
+#savings-com-page .savings-com-footer a:hover {
+	text-decoration: underline;
+}
+a.mailto {
+  padding-left:25px;
+  background: url(images/Savings_envelope.png) no-repeat;
+  height:30px;
+}
+#savings-com-page .savings-com-footer p {
+ width:400px;
+ margin: auto;
+}
+
+#savings-com-page .savings-com-footer p a{
+  display:block; float:left; margin-left:20px; font-size:12px
+}
+#savings-com-search-click {
+  background: url(images/Savings_lupa.png) no-repeat;
+text-indent: -9999px;
+display: block;
+float: left;
+width: 16px;
+margin-top: 6px;
+position: relative;
+left: -18px;
+}
+#savings-com-search {
+	background: white;
+	font-family: Tahoma;
+	width: 127px;
+}
+#savings-com-form-category select {
+	margin-top: 10px;
+	float: right;
+}
+#savings-com-form img {
+	border: none;
+	padding: 0;
+}
+#savings-com-search-submit {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	width: 91px;
+}
+
+#savings-com-form #keyword {
+height: 29px;
+margin-bottom: 15px;
+margin-top: 3px;
+padding-top: 0;
+padding-bottom: 0;
+background: white; 
+border: 1px solid #cfcfcf;
+}
+
+#savings-com-widget-wrap {
+  margin-top:10px;
+}
+li.savings-com-widget-item {
+  background: none !important; width:auto!important; padding:5px !important;
+}
+h3.savings-com {
+  border-bottom:1px solid #cfcfcf; margin: 5px 0px; font-size:36px; 
+}
+h3.savings-com a {
+  text-decoration:none; color: black;
+  font-size: 28px;
+}
+h3.savings-com img {
+  float:left; margin:0 30px 10px 0;
+}
+.savings-com-deal-merchant p {
+ font-size:10px
+}
+#savings-com-page-list #whoops h3 {
+  font-size:18px; font-weight:bold;
+}
+#whoops {
+  font-size:14px;
+}
+#whoops li{
+  margin-left:30px;
+  list-style: none;
+}
+span.savings-com-featured-categories {
+color:#A20000; font-size:12px;
+}
+p.savings-com-expires {
+float:right; margin:5px 10px 5px 0 ; font-size:12px
+}
+p.savings-com-expires span.today {
+ color: #a20000;
+ font-weight: bold;
+}
+p.savings-com-expires span.tommorrow {
+ color: #df6900;
+ font-weight: bold;
+ text-transform: uppercase;
+}
+p.savings-com-expires span.normal {
+ color: black;
+}
+
+.merchant-page #savings-nav {
+	margin-top: 0;
+}
+.merchant-page .savings-com-deal-title {
+	width: 75%;
+}
+.savings-com-deal-title a:hover {
+  color: #DF6900 !important;
+}
+.merchant-name {
+	display: none;
+}
+.more-details:hover {
+	cursor: pointer;
+}
