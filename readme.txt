@@ -12,7 +12,7 @@ This Savings.com plugin allows you to quickly create a coupon section on your Wo
 This is the absolute fastest, easiest and most effective way to add coupons to your WordPress site! Brought to you exclusively by Savings.com.
 
 Overview:
-Easily and quickly integrate the Savings.com WordPress Coupon Plugin and Widget into your website. This plugin and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!
+Easily and quickly integrate the Savings.com WordPress Coupon Plugin and Widget into your website. This plugin and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!!
 
 
 
