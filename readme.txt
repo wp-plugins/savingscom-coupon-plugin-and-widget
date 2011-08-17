@@ -70,6 +70,9 @@ visit www.partnerwithsavings.com
 
 == Changelog ==
 
+= 1.4 =
+* Crucial, naming convention for plugin folder if updated from Wordpress directory.  Folder name changed from Savings-com to savingscom-coupon-plugin-and-widget
+
 = 1.3 =
 * Bugfixes and enhancements from open beta
 

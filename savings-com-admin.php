@@ -122,7 +122,7 @@ function saving_com_options() {
 	<?php endforeach; ?>
 	<p><input id="key" name="key" type="text" size="40" maxlength="36" value="<?php echo get_option('savings_com_api_key'); ?>" style="font-family: 'Courier New', Courier, mono; font-size: 1.5em;" /> <a href="mailto:api-request@savings.com">Obtain API key</a>
 	
-	<img class="tooltip" title="In order to use this plugin you are required to enter your API developer key for verification purposes. You can obtain a key directly from Savings.com" src="<?php echo get_site_url();?>/wp-content/plugins/Savings-com/images/tooltip.gif"/></p>
+	<img class="tooltip" title="In order to use this plugin you are required to enter your API developer key for verification purposes. You can obtain a key directly from Savings.com" src="<?php echo get_site_url();?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/tooltip.gif"/></p>
 	<p><input id="loadcss" name="loadcss" type="checkbox" <?php checked( $config['loadcss'], true ); ?> /> <?php _e("Use Savings.com stylesheet?"); ?></p>
 	<p>
 	  <input name="endpoint" type="radio" value="US" <?php echo ($config['endpoint'] == "US")?"CHECKED=CHECKED":""; ?>/> <label><?php _e("US API"); ?></label>
@@ -132,7 +132,7 @@ function saving_com_options() {
 	<!--<p>Would you like the plugin to display deals from non-monetizable merchants? 
 	<input name="monetizable" type="radio" value="no" <?php echo ($config['monetizable'] == "no")?"CHECKED=CHECKED":""; ?>/> <label><?php _e("No"); ?></label>
 	<input name="monetizable" type="radio" value="yes" <?php echo ($config['monetizable'] == "yes")?"CHECKED=CHECKED":""; ?>/> <label><?php _e("Yes"); ?></label>
-	<img class="tooltip" title="Non-monetizable merchants are merchants that Savings.com will not be able to pay you for your conversions." src="<?php echo get_site_url();?>/wp-content/plugins/Savings-com/images/tooltip.gif"/></p>
+	<img class="tooltip" title="Non-monetizable merchants are merchants that Savings.com will not be able to pay you for your conversions." src="<?php echo get_site_url();?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/tooltip.gif"/></p>
 	-->
 	<p class="submit"><input type="submit" name="submit" value="<?php _e('Save configuration &raquo;'); ?>" /></p>
 	

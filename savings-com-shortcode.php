@@ -127,8 +127,8 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
         $html .= '<div id="savings-com-page-navigation-filters">
 			<form action="'.str_replace( '%7E', '~', $request_uri).'" method="get" id="savings-com-form">
 			    '; if($_GET['page_id']!='') { '<input type="hidden" name="page_id" value="'.$_GET['page_id'].'">'; }
-		  $html .='<p class="savings-search"><label for="keyword">Search by store, brand or keyword</label> <input class="text" type="text" id="keyword" name="keyword" value="'.stripslashes($_GET['keyword']).'"/><input id="savings-com-search-submit" type="image" src="'.get_site_url().'/wp-content/plugins/Savings-com/images/submit.png" value="Search"/></form>
-		  <a rel="nofollow" ';  $html .= 'class="logo-link" href="'.$enpoint_info['home_link'].'?placementid='.get_option('savings_com_placementid').'"><img src="'.get_site_url().'/wp-content/plugins/Savings-com/images/logo-'.$enpoint_info['base'].'.png"/></a>
+		  $html .='<p class="savings-search"><label for="keyword">Search by store, brand or keyword</label> <input class="text" type="text" id="keyword" name="keyword" value="'.stripslashes($_GET['keyword']).'"/><input id="savings-com-search-submit" type="image" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/submit.png" value="Search"/></form>
+		  <a rel="nofollow" ';  $html .= 'class="logo-link" href="'.$enpoint_info['home_link'].'?placementid='.get_option('savings_com_placementid').'"><img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/logo-'.$enpoint_info['base'].'.png"/></a>
 		  <script>jQuery(document).ready(function(){
   jQuery("#savings-com-page label").inFieldLabels()}); </script></p><br style="clear:both"/>';   
 		 if(!$browse_store && !$merchant_id){ 
@@ -253,7 +253,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		  $deal->expireDate = (is_object($deal->expireDate))?"0":$deal->expireDate;
 		  $date = explode('+',$deal->expireDate); $date= getdate(strtotime($date[0])); 
 		    $uk = ($enpoint_info['base'] =='uk')?'_uk':'';
-		    $coupon_code = is_object($deal->couponCode) ? '<img src="'.get_site_url().'/wp-content/plugins/Savings-com/images/shop'.$uk.'.png"/>' : '<img src="'.get_site_url().'/wp-content/plugins/Savings-com/images/Savings_get_code_0'.$i.$uk.'.png"/>';
+		    $coupon_code = is_object($deal->couponCode) ? '<img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/shop'.$uk.'.png"/>' : '<img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/Savings_get_code_0'.$i.$uk.'.png"/>';
 		    $i++; if($i==5) {$i=1;}
 		    
 		    $code_tooltip = is_object($deal->couponCode) ? 'Click to Activate Coupon & Open Site' : 'Click to Copy Code & Open Site';
@@ -277,9 +277,9 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 				
 				</a><br style="clear:both"/>';
 				if(!$merchant_id){
-				  $html .='<a class="details""><img class="more-details" src="'.get_site_url().'/wp-content/plugins/Savings-com/images/more-details.png"></a>';
+				  $html .='<a class="details""><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/more-details.png"></a>';
 				} else {
-				  $html .='<a class="merchant-details"><img class="more-details" src="'.get_site_url().'/wp-content/plugins/Savings-com/images/merchant-more-details.png"></a>';
+				  $html .='<a class="merchant-details"><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details.png"></a>';
 				}
 				
 				$html .= '<p class="savings-com-expires">';
@@ -317,7 +317,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 			      jQuery('#deal-title-".$deal->id."').tipTip({defaultPosition: 'left', maxWidth:'auto', classname:'".$class_tooltip."'});
 			    
 			      jQuery('#deal-title-".$deal->id."').zclip({
-            path:'".get_site_url()."/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+            path:'".get_site_url()."/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
             copy:'".$code."',
             afterCopy:function(){
                 window.open(jQuery('#".$deal->id."').attr('href'),'_blank');
@@ -325,7 +325,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
             });
             
             jQuery('#".$deal->id."').zclip({
-              path:'".get_site_url()."/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+              path:'".get_site_url()."/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
               copy:'".$code."',
               afterCopy:function(){
                   window.open(jQuery(this).attr('href'),'_blank');
@@ -334,7 +334,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
             
            /* jQuery('#".$deal->id." img').load(function() {  
               jQuery('#".$deal->id."').zclip({
-              path:'".get_site_url()."/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+              path:'".get_site_url()."/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
               copy:'".$code."',
               afterCopy:function(){
                   window.open(jQuery(this).attr('href'),'_blank');
@@ -378,10 +378,10 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 			    
 			    jQuery("a.details").click(function() { 
 			      old = jQuery(this).find("img").attr("src");
-			      if (old=="'.get_site_url().'/wp-content/plugins/Savings-com/images/more-details.png") {
-			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/Savings-com/images/view-more-open.png");
+			      if (old=="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/more-details.png") {
+			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/view-more-open.png");
 			      } else {
-			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/Savings-com/images/more-details.png");
+			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/more-details.png");
 			      }
 			    
 			    
@@ -389,10 +389,10 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 			     jQuery("a.merchant-details").click(function() { jQuery(this).parent().next().slideToggle(); });
 			     jQuery("a.merchant-details").click(function() { 
 			      old = jQuery(this).find("img").attr("src");
-			      if (old=="'.get_site_url().'/wp-content/plugins/Savings-com/images/merchant-more-details.png") {
-			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/Savings-com/images/merchant-more-details-open.png");
+			      if (old=="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details.png") {
+			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details-open.png");
 			      } else {
-			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/Savings-com/images/merchant-more-details.png");
+			        jQuery(this).find("img").attr("src","'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details.png");
 			      }
 			    
 			    
@@ -415,7 +415,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 			    <br/><br/>
 			    <p style="text-align:center"><a href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
 			    
-			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/Savings-com/images/Savings_logo_footer_search.png"/></a>
+			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/Savings_logo_footer_search.png"/></a>
 			    </p>
 			    </div>
 			      <div id=savings-com-pagination></div>
@@ -446,7 +446,7 @@ Oh come on - don\'t stop now, go up there and try it again.
 			    <br/><br/>
 			    <p style="text-align:center"><a href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
 			    
-			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/Savings-com/images/Savings_logo_footer_search.png"/></a>
+			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/Savings_logo_footer_search.png"/></a>
 			    </p>
 			    </div>
 			    

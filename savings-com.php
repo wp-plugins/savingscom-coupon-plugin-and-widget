@@ -6,7 +6,7 @@
 Plugin Name: Savings.com
 Plugin URI: http://savings.com/wordpress_plugin
 Description: Show deals form <strong>Savings.com</strong> directly into your wordpress site. 
-Version: 1.3
+Version: 1.4
 Author: MyShuitings
 Author URI: http://myshuitings.com
 License: GPLv2 or later
@@ -198,7 +198,7 @@ function savings_com_find_cached( $url ){
 }
 
 global $savings_com_db_version;
-$savings_com_db_version = "1.3";
+$savings_com_db_version = "1.4";
 
 function savings_com_create_db_table () {
 	global $wpdb, $savings_com_db_version;
@@ -278,9 +278,9 @@ function savings_com_load_js() {
 	if ( !is_admin() ) {	
 		wp_enqueue_script('jquery');
 		wp_enqueue_script('savings-com-js',$savings_com_plugin_path.'savings-com.js', array('jquery'));
-    wp_enqueue_script('tiptip', '/wp-content/plugins/Savings-com/tiptip.js');
-		wp_enqueue_script('zclip', '/wp-content/plugins/Savings-com/jquery.zclip.js');
-		wp_enqueue_script('infieldlabels', '/wp-content/plugins/Savings-com/jquery.infieldlabel.js');
+    wp_enqueue_script('tiptip', '/wp-content/plugins/savingscom-coupon-plugin-and-widget/tiptip.js');
+		wp_enqueue_script('zclip', '/wp-content/plugins/savingscom-coupon-plugin-and-widget/jquery.zclip.js');
+		wp_enqueue_script('infieldlabels', '/wp-content/plugins/savingscom-coupon-plugin-and-widget/jquery.infieldlabel.js');
 	}
 }
 add_action('wp_print_scripts', 'savings_com_load_js' );
@@ -352,21 +352,21 @@ function savings_com_ajax() {
 			        jQuery("#widget-deal-title-'.$deal->id.'").tipTip({defaultPosition: "right", maxWidth:"auto", classname:"'.$class_tooltip.'"});
 							
 				      jQuery("#widget-'.$deal->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery(this).attr("href"));
               }
               });
               jQuery("#widget-deal-merchant-'.$deal->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery(this).attr("href"));
               }
               }); 
               jQuery("#widget-deal-title-'.$deal->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery("#widget-'.$deal->id.'").attr("href"));
@@ -420,21 +420,21 @@ function savings_com_ajax() {
 							
 							
 				      jQuery("#widget-'.$deals->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery(this).attr("href"),"_blank");
               }
               }); 
               jQuery("#widget-deal-merchant-'.$deals->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery(this).attr("href"),"_blank");
               }
               }); 
               jQuery("#widget-deal-title-'.$deals->id.'").zclip({
-              path:"'.get_site_url().'/wp-content/plugins/Savings-com/ZeroClipboard.swf",
+              path:"'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf",
               copy:"'.$code.'",
               afterCopy:function(){
                   window.open(jQuery("#widget-'.$deal->id.'").attr("href"),"_blank");

@@ -145,21 +145,21 @@ function widget_savings_com_register() {
 			  jQuery('#widget-deal-title-<?php echo $deal->id ?>').tipTip({defaultPosition: 'right', maxWidth:'auto', classname:'<?php echo $class_tooltip?>'});
 				
 				jQuery('#widget-<?php echo $deal->id ?>').zclip({
-        path:'<?php echo get_site_url()?>/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+        path:'<?php echo get_site_url()?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
         copy:'<?php echo $code?>',
         afterCopy:function(){
             window.open(jQuery(this).attr('href'),'_blank');
         }
         }); 
         jQuery('#widget-deal-merchant-<?php echo $deal->id ?>').zclip({
-        path:'<?php echo get_site_url()?>/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+        path:'<?php echo get_site_url()?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
         copy:'<?php echo $code?>',
         afterCopy:function(){
             window.open(jQuery(this).attr('href'),'_blank');
         }
         }); 
         jQuery('#widget-deal-title-<?php echo $deal->id ?>').zclip({
-        path:'<?php echo get_site_url()?>/wp-content/plugins/Savings-com/ZeroClipboard.swf',
+        path:'<?php echo get_site_url()?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/ZeroClipboard.swf',
         copy:'<?php echo $code?>',
         afterCopy:function(){
             window.open(jQuery('#widget-<?php echo $deal->id?>').attr('href'),'_blank');
