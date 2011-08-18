@@ -69,6 +69,7 @@ Widget Installation Instruction
 FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings.com 
 
 == Screenshots ==
+
 Screenshots? 
 Screenshots are soooooo 80s. Take a look at the future with our **live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")**
 
@@ -77,7 +78,6 @@ Or take a look at one of these websites below that have already have it up and r
 * FrugalFinders.com: http://frugalfinders.com/store-coupons-codes/ 
 * PassionForSavings.com: http://www.passionforsavings.com/online-coupon-codes/ 
 * MomsNeedToKnow.com: http://www.momsneedtoknow.com/store-coupons-and-codes/ 
-
 
 And many more! 
 
