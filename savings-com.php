@@ -6,7 +6,7 @@
 Plugin Name: Savings.com
 Plugin URI: http://savings.com/wordpress_plugin
 Description: Show deals form <strong>Savings.com</strong> directly into your wordpress site. 
-Version: 1.4
+Version: 1.4.1
 Author: MyShuitings
 Author URI: http://myshuitings.com
 License: GPLv2 or later

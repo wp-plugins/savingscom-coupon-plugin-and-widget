@@ -135,11 +135,11 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		$html .= '<span class="savings-com-featured-categories">Featured Categories:</span><br style="clear:both"/>
 		  <ul class="featured-categories">
 		    <li>
-			 <a href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_1'].'&category_name='.urlencode($new_categories[$final_params['featured_1']]).'">'.$new_categories[$final_params['featured_1']].'</a>
+			 <a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_1'].'&category_name='.urlencode($new_categories[$final_params['featured_1']]).'">'.$new_categories[$final_params['featured_1']].'</a>
 			</li><li>
-			 <a href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_2'].'&category_name='.urlencode($new_categories[$final_params['featured_2']]).'">'.$new_categories[$final_params['featured_2']].'</a>
+			 <a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_2'].'&category_name='.urlencode($new_categories[$final_params['featured_2']]).'">'.$new_categories[$final_params['featured_2']].'</a>
 			</li><li>
-			 <a href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_3'].'&category_name='.urlencode($new_categories[$final_params['featured_3']]).'">'.$new_categories[$final_params['featured_3']].'</a>
+			 <a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$final_params['featured_3'].'&category_name='.urlencode($new_categories[$final_params['featured_3']]).'">'.$new_categories[$final_params['featured_3']].'</a>
 		</li>
 		  
 		  </ul>
@@ -172,16 +172,16 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		    if($merchant && is_array($merchant->categoryIds)) {
 		      foreach($categories as $cat){
 			      if(in_array($cat->id , $merchant->categoryIds)){
-			          $categoryhtml =  '<a href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$cat->id.'&category_name='.urlencode($cat->name).'">'.$cat->name.'</a> > ';
+			          $categoryhtml =  '<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?category_ids='.$cat->id.'&category_name='.urlencode($cat->name).'">'.$cat->name.'</a> > ';
 			      } else {
 			         
 			      }
 		      }
 		    
 		
-		  $html .= '<p class="savings-com-breadcrumbs"><a href="'.str_replace( '%7E', '~', $request_uri).'">Deal Home</a> > '.$categoryhtml.'<a href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant->id.'&merchant_name='.$merchant->name.'">'.$merchant->name .'</a></p>';
+		  $html .= '<p class="savings-com-breadcrumbs"><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'">Deal Home</a> > '.$categoryhtml.'<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant->id.'&merchant_name='.$merchant->name.'">'.$merchant->name .'</a></p>';
 		  } else {
-		    $html .= '<p class="savings-com-breadcrumbs"><a href="'.str_replace( '%7E', '~', $request_uri).'">Deal Home</a> > <a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse Stores by Letter</a></p>';
+		    $html .= '<p class="savings-com-breadcrumbs"><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'">Deal Home</a> > <a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse Stores by Letter</a></p>';
 		  }
 		}
 			$html .= '</form><br style="clear:both"/>
@@ -197,14 +197,14 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		    <ul id="savings-com-page-tabs-list">
 			
 			<li class="savings-com-page-tab savings-category-btn">
-			 <a class="'.$popular.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=RECENTLY_POPULAR">Popular Deals</a>
+			 <a rel="nofollow" class="'.$popular.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=RECENTLY_POPULAR">Popular Deals</a>
 			</li> 
 			<li class="savings-com-page-tab savings-category-btn">
-			 <a class="'.$staff_picks.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=STAFF_PICKS">Recommended Deals</a>
+			 <a rel="nofollow" class="'.$staff_picks.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=STAFF_PICKS">Recommended Deals</a>
 			</li>
 			
 			<li class="savings-com-page-tab savings-category-btn">
-			 <a class="'.$newest.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=NEWEST">New Deals</a>
+			 <a rel="nofollow" class="'.$newest.'" href="'.str_replace( '%7E', '~', $request_uri).'?predefined_query=NEWEST">New Deals</a>
 			</li>
 			
 
@@ -223,7 +223,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		} 
 		
 		if($merchant_id){	
-		 $html .= '<br style="clear:both"/><h3 class="savings-com"><a target="_blank" href="'.$merchant->displayUrl.'">'.$merchant->name.' Deals</a><img src="'.$merchant->imageUrl.'"/></h3> ';
+		 $html .= '<br style="clear:both"/><h3 class="savings-com"><a rel="nofollow"  target="_blank" href="'.$merchant->displayUrl.'">'.$merchant->name.' Deals</a><img src="'.$merchant->imageUrl.'"/></h3> ';
 		} 
 		
 		if($browse_store && !$store_letter){	
@@ -263,23 +263,23 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		    $html .= '<div class="savings-com-deal-item savings-post">';
 		    if(!$merchant_id){
         $html .= '<div class="savings-com-deal-merchant">
-				    <a href="'.str_replace( '%7E', '~', $request_uri).'?merchant_ids='.$deal->merchantId.'&merchant_name='.$deal->merchantName.'">
+				    <a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?merchant_ids='.$deal->merchantId.'&merchant_name='.$deal->merchantName.'">
 					<img width="120" src="'.$deal->merchantImageUrl.'?height=30&amp;width=120" alt="'.$deal->merchantName.' coupons"><p style="margin-bottom:0px">'.$deal->merchantName.'</p>
 				    </a>
 				</div>';
 				}
 				$html .= '<div class="savings-com-deal-title" title="'.$code_tooltip.'" id="deal-title-'.$deal->id.'">
-				    <a target="_blank" class="savings-com-deal-title" title="'.$code_tooltip.'" target="_blank" href="'.$deal->dealUrl.'">'.$deal->title.'</a>
+				    <a rel="nofollow" target="_blank" class="savings-com-deal-title" title="'.$code_tooltip.'" target="_blank" href="'.$deal->dealUrl.'">'.$deal->title.'</a>
 				</div>
-				<a target="_blank" href="'.$deal->dealUrl.'" class="savings-com-deal-code" title="'.$code_tooltip.'" id="'.$deal->id.'">
+				<a rel="nofollow" target="_blank" href="'.$deal->dealUrl.'" class="savings-com-deal-code" title="'.$code_tooltip.'" id="'.$deal->id.'">
 				
 				'. $coupon_code .'
 				
 				</a><br style="clear:both"/>';
 				if(!$merchant_id){
-				  $html .='<a class="details""><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/more-details.png"></a>';
+				  $html .='<a rel="nofollow" class="details""><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/more-details.png"></a>';
 				} else {
-				  $html .='<a class="merchant-details"><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details.png"></a>';
+				  $html .='<a rel="nofollow" class="merchant-details"><img class="more-details" src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/merchant-more-details.png"></a>';
 				}
 				
 				$html .= '<p class="savings-com-expires">';
@@ -363,7 +363,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		
 		<div class="savings-com-footer"><p>
 		<a  '; if($browse_store || $store_letter !='' || $merchant_id || $keyword || $category_name ) { $html .= ' rel="nofollow" '; }; $html .=' href="'.$enpoint_info['about_link'].'" target="_blank">About Savings.com</a>
-		<a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
+		<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
 		<a class="mailto" href="mailto:'.$enpoint_info['email'].'">Report Problem</a>
 		</p>
 		</div>
@@ -413,7 +413,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
     <li>Step 4.  Forget that you were ever here.</li>
  </ul><br/>
 			    <br/><br/>
-			    <p style="text-align:center"><a href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
+			    <p style="text-align:center"><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
 			    
 			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/Savings_logo_footer_search.png"/></a>
 			    </p>
@@ -421,7 +421,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 			      <div id=savings-com-pagination></div>
 	 <div class="savings-com-footer"><p>
 		<a  '; if($browse_store || $store_letter !='' || $merchant_id || $keyword || $category_name ) { $html .= ' rel="nofollow" '; }; $html .=' href="'.$enpoint_info['about_link'].'" target="_blank">About Savings.com</a>
-		<a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
+		<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
 		<a class="mailto" href="mailto:'.$enpoint_info['email'].'">Report Problem</a>
 		</p>
 		</div></div></div>';
@@ -444,7 +444,7 @@ Actually you didn’t but we really couldn’t find anything that matches your s
  </ul><br/>
 Oh come on - don\'t stop now, go up there and try it again.
 			    <br/><br/>
-			    <p style="text-align:center"><a href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
+			    <p style="text-align:center"><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'">Return to Main Deals Page</a><br/><br/><br/>
 			    
 			    <a rel="nofollow" href="'.$enpoint_info['home_link'].'" target="_blank"><img src="'.get_site_url().'/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/Savings_logo_footer_search.png"/></a>
 			    </p>
@@ -454,7 +454,7 @@ Oh come on - don\'t stop now, go up there and try it again.
 			    <div id=savings-com-pagination></div>
 	 <div class="savings-com-footer"><p>
 		<a '; if($browse_store || $store_letter !='' || $merchant_id || $keyword || $category_name ) { $html .= ' rel="nofollow" '; }; $html .='  href="'.$enpoint_info['about_link'].'" target="_blank">About Savings.com</a>
-		<a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
+		<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
 		<a class="mailto" href="mailto:'.$enpoint_info['email'].'">Report Problem</a>
 		</p>
 		</div></div></div>';
@@ -467,9 +467,9 @@ Oh come on - don\'t stop now, go up there and try it again.
 	 $i = 1; $col1 =''; $col2='';
 	 foreach($wp_savings_merchants as $merchant) {
 	    if($i == '1') {
-	      $col1 .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant["id"].'&merchant_name='.urlencode($merchant["name"]).'">'.$merchant["name"].'</a></li>';
+	      $col1 .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant["id"].'&merchant_name='.urlencode($merchant["name"]).'">'.$merchant["name"].'</a></li>';
 	    } else {
-	      $col2 .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant["id"].'&merchant_name='.urlencode($merchant["name"]).'">'.$merchant["name"].'</a></li>';
+	      $col2 .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?&merchant_ids='.$merchant["id"].'&merchant_name='.urlencode($merchant["name"]).'">'.$merchant["name"].'</a></li>';
 	    }
 	    
 	    $i++; $i = ($i==3)?1:$i;
@@ -477,7 +477,7 @@ Oh come on - don\'t stop now, go up there and try it again.
 	 <div id=savings-com-pagination></div>
 	 <div class="savings-com-footer"><p>
 		<a '; if($browse_store || $store_letter !='' || $merchant_id || $keyword || $category_name ) { $html .= ' rel="nofollow" '; }; $html .='  href="'.$enpoint_info['about_link'].'" target="_blank">About Savings.com</a>
-		<a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
+		<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
 		<a class="mailto" href="mailto:'.$enpoint_info['email'].'">Report Problem</a>
 		</p>
 		</div></div>
@@ -485,39 +485,39 @@ Oh come on - don\'t stop now, go up there and try it again.
 	} else {
 	  $html .= '<div id="savings-com-page-merchants">
 			<ul id="savings-com-page-merchants-list" class="half">';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=A">A</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=B">B</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=C">C</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=D">D</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=E">E</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=F">F</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=G">G</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=H">H</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=I">I</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=J">J</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=K">K</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=L">L</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=M">M</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=N">N</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=A">A</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=B">B</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=C">C</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=D">D</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=E">E</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=F">F</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=G">G</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=H">H</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=I">I</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=J">J</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=K">K</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=L">L</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=M">M</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=N">N</a></li>';
 	  $html .= '</ul><ul id="savings-com-page-merchants-list 2" class="half">';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=O">O</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=P">P</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Q">Q</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=R">R</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=S">S</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=T">T</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=U">U</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=V">V</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=W">W</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=X">X</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Y">Y</a></li>';
-	  $html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Z">Z</a></li>';
-		$html .= '<li><a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=OTHER">#</a></li>';	
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=O">O</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=P">P</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Q">Q</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=R">R</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=S">S</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=T">T</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=U">U</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=V">V</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=W">W</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=X">X</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Y">Y</a></li>';
+	  $html .= '<li><a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=Z">Z</a></li>';
+		$html .= '<li><a rel="nofollow"  href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1&store_letter=OTHER">#</a></li>';	
 			
 	  $html .= '</ul><br style="clear:both"/></div><div id=savings-com-pagination></div>
 	 <div class="savings-com-footer"><p>
 		<a '; if($browse_store || $store_letter !='' || $merchant_id || $keyword || $category_name ) { $html .= ' rel="nofollow" '; }; $html .='   href="'.$enpoint_info['about_link'].'" target="_blank">About Savings.com</a>
-		<a href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
+		<a rel="nofollow" href="'.str_replace( '%7E', '~', $request_uri).'?browse_store=1">Browse by Store</a>
 		<a class="mailto" href="mailto:'.$enpoint_info['email'].'">Report Problem</a>
 		</p>
 		</div></div>';

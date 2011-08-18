@@ -225,7 +225,7 @@ function widget_savings_com_register() {
 				</div>
 				
 				<a target="_blank" rel="nofollow" id="savings-com-widget-home<?php echo $enpoint_info['base']?>" href="<?php echo $enpoint_info['home_link']?>?placementid=<?php echo get_option('savings_com_placementid')?>">Savings.com</a>
-				 <a target="_blank" id="savings-com-widget-deals" href="<?php echo $enpoint_info['home_link']?>?placementid=<?php echo get_option('savings_com_placementid')?>">See More Deals >></a><br style="clear:both"/>
+				 <a rel="nofollow" target="_blank" id="savings-com-widget-deals" href="<?php echo $enpoint_info['home_link']?>?placementid=<?php echo get_option('savings_com_placementid')?>">See More Deals >></a><br style="clear:both"/>
 			</div> 
 			<?php echo $after_widget; 
 	}

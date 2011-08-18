@@ -79,6 +79,10 @@ FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings
 
 == Changelog ==
 
+= 1.4.1 =
+* Trivial, Adding a slew of rel="nofollow" to keep it from deluting a sites positive seo, plus a change to the get API request on the backend.
+
+
 = 1.4 =
 * Crucial, naming convention for plugin folder if updated from Wordpress directory.  Folder name changed from Savings-com to savingscom-coupon-plugin-and-widget
 

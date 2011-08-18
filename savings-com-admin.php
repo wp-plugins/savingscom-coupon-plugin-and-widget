@@ -114,13 +114,14 @@ function saving_com_options() {
     <h2><?php _e('Savings.com Configuration'); ?></h2>
     <div style="margin: auto; width: 600px; ">
 	<form action="" method="post" id="savings-com-configuration">
-  <p>The Savings.com WordPress Plugin uses information from the Savings.com API to populate the plugin with Savings.com deal content. Enter your specifications below to tailor the plugin for your audience.  If you have any questions please refer to the SDC WordPress User Guide or email us <a href="mailto:api-request@savings.com">Here</a>. </p>
+  <p>The Savings.com WordPress Plugin uses information from the Savings.com API to populate the plugin and widget with Savings.com deal content. Enter your specifications below to tailor the plugin for your audience. If you have any questions please refer to the <a href="http://www.savings-plugin-staging.com/staging1/about-the-plugin/">SDC Plugin Website</a> or you can apply for an API Key by clicking <a href="http://www.tinyurl.com/savingswordpress">Here</a>. </p>
+  
 	<h3><label for="key"><?php _e('Savings.com API Key'); ?></label></h3>
 	<?php foreach ( $ms as $m ) : ?>
 	<p style="padding: .5em; background-color: #<?php echo $messages[$m]['color']; ?>; color: #fff; font-weight: bold;"><?php echo $messages[$m]['text']; ?> 
 	</p>
 	<?php endforeach; ?>
-	<p><input id="key" name="key" type="text" size="40" maxlength="36" value="<?php echo get_option('savings_com_api_key'); ?>" style="font-family: 'Courier New', Courier, mono; font-size: 1.5em;" /> <a href="mailto:api-request@savings.com">Obtain API key</a>
+	<p><input id="key" name="key" type="text" size="40" maxlength="36" value="<?php echo get_option('savings_com_api_key'); ?>" style="font-family: 'Courier New', Courier, mono; font-size: 1.5em;" /> <a href="http://www.tinyurl.com/savingswordpress">Obtain API key</a>
 	
 	<img class="tooltip" title="In order to use this plugin you are required to enter your API developer key for verification purposes. You can obtain a key directly from Savings.com" src="<?php echo get_site_url();?>/wp-content/plugins/savingscom-coupon-plugin-and-widget/images/tooltip.gif"/></p>
 	<p><input id="loadcss" name="loadcss" type="checkbox" <?php checked( $config['loadcss'], true ); ?> /> <?php _e("Use Savings.com stylesheet?"); ?></p>
