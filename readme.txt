@@ -1,5 +1,4 @@
 === Plugin Name ===
-Plugin Website: www.partnerwithsavings.com 
 Contributors: Savings.com
 Donate link: http://www.partnerwithsavings.com
 Tags: savings.com, coupons, coupon, plugin, widget, voucher, deal, savings, affiliate, marketing, CPA
@@ -21,7 +20,7 @@ Once you [receive your Savings.com issued API Key](http://tinyurl.com/savingswor
 Notable features:
 
 * Plugin automatically adapts to your theme with minimal CSS adjustments required.
-* Search the entire Savings.com Database by store, brand or keyword. Results are delivered straight to your website– not redirected externally!
+* Search the entire Savings.com Database by store, brand or keyword. Results are delivered straight to your website and not redirected externally!
 * Customize up to three 'Featured Categories' that are relevant to your audience.
 * Browse coupons from over 20 categories.
 * Sort coupons by our staff's Recommendations, Popular Deals and New Deals.
@@ -34,11 +33,11 @@ The widget can be used as a standalone feature and has been optimized for the st
 When you are ready and have your [API key](http://tinyurl.com/savingswordpress/ "Get my API key!"), simply follow the instructions on the next tab. 
 
 *Note: We will be releasing FAQs and Best Practices shortly!*
-
+Plugin Website: www.partnerwithsavings.com 
 
 == Installation ==
 
-This section describes how to install the plugin & widget and get it working. Note, you can have any combination of the plugin or widget active and working together. 
+1. This section describes how to install the plugin & widget and get it working. Note, you can have any combination of the plugin or widget active and working together. 
 
 **If you do not have a Savings.com API Key you must apply [HERE.](http://tinyurl.com/savingswordpress/ "Sign up here to get a Savings.com API Key!")** 
 
@@ -70,10 +69,9 @@ FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings
 
 == Screenshots ==
 
-Screenshots? 
 Screenshots are soooooo 80s. Take a look at the future with our **live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")**
 
-Or take a look at one of these websites below that have already have it up and running: 
+Or take a look at one of these websites below that have already have the plugin up and running: 
 
 * FrugalFinders.com: http://frugalfinders.com/store-coupons-codes/ 
 * PassionForSavings.com: http://www.passionforsavings.com/online-coupon-codes/ 
