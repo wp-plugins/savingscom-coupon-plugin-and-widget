@@ -68,14 +68,15 @@ Widget Installation Instruction
 FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings.com 
 
 == Screenshots ==
-1. Screenshots are soooooo 80s. Take a look at the future with our live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")
+1. Screenshots are soooooo 80s. **Take a look at the future with our fancy live demo <a href=\"http://www.savings-plugin-staging.com/staging1/testing-page/\" target=\"_blank\" title=\"See live demo! \">here</a>.**  
+Or take a look at one of these websites below that have already have the plugin up and running:   
 
-2. Or take a look at one of these websites below that have already have the plugin up and running: 
 
-* FrugalFinders.com: http://frugalfinders.com/store-coupons-codes/ 
-* PassionForSavings.com: http://www.passionforsavings.com/online-coupon-codes/ 
-* MomsNeedToKnow.com: http://www.momsneedtoknow.com/store-coupons-and-codes/ 
+*   FrugalFinders.com: <a href=\"http://frugalfinders.com/store-coupons-codes/ \" target=\"_blank\">http://frugalfinders.com/store-coupons-codes/ </a>
+*   PassionForSavings.com: <a href=\"http://www.passionforsavings.com/online-coupon-codes/ \" target=\"_blank\">http://www.passionforsavings.com/online-coupon-codes/ </a>
+*   MomsNeedToKnow.com: <a href=\"http://www.momsneedtoknow.com/store-coupons-and-codes/ \" target=\"_blank\">http://www.momsneedtoknow.com/store-coupons-and-codes/ </a>
 
+And many more!
 
 == Changelog ==
 
