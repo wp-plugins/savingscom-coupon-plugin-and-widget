@@ -9,12 +9,12 @@ Stable tag: trunk
 This Savings.com Plugin & Widget allows you to quickly create a coupon section on your WordPress website. It's kind of amazing. Really. 
 
 == Description == 
-**Before you begin, you must signup [HERE](http://tinyurl.com/savingswordpress/ "Sign up here to get a Savings.com API Key!") in order to receive a Savings.com API Key needed to activate the plugin.** 
+**Before you begin, you must signup [HERE](http://ee.savings.com/about/affiliates/ "Sign up for the Savings.com Affiliate Program") in order to receive a Savings.com API Key needed to activate the plugin.** 
 
 This is the absolute fastest, easiest and most effective way to add coupons to your WordPress site! Brought to you exclusively by Savings.com.
 
 
-Once you [receive your Savings.com issued API Key](http://tinyurl.com/savingswordpress/ "Get my API key!") you can easily and quickly integrate the Savings.com WordPress Coupon Plugin and Widget into your website. This plugin and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!! **Take a look at the live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")**
+Once you [are part of the Savings.com Affiliate program and receive your API Key](http://ee.savings.com/about/affiliates/ "Get my API key!") you can easily and quickly integrate the Savings.com WordPress Coupon Plugin and Widget into your website. This plugin and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!! **Take a look at the live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")**
 
 
 Notable features:
