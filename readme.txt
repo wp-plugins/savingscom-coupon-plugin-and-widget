@@ -30,7 +30,7 @@ Notable features:
 
 The widget can be used as a standalone feature and has been optimized for the standard 300 X 250 sidebar ad size. Now you can finally replace those ugly sidebar ads with a fully functional widget that allows users to search for coupons by category or keyword!!
 
-When you are ready and have your [API key](http://tinyurl.com/savingswordpress/ "Get my API key!"), simply follow the instructions on the next tab. 
+When you are ready and have your [API key](http://ee.savings.com/about/affiliates/application "Partner with Savings.com!"), simply follow the instructions on the next tab. 
 
 *Note: We will be releasing FAQs and Best Practices shortly!*
 Plugin Website: www.partnerwithsavings.com 
@@ -39,11 +39,11 @@ Plugin Website: www.partnerwithsavings.com
 
 1. This section describes how to install the plugin & widget and get it working. Note, you can have any combination of the plugin or widget active and working together. 
 
-**If you do not have a Savings.com API Key you must apply [HERE.](http://tinyurl.com/savingswordpress/ "Sign up here to get a Savings.com API Key!")** 
+**If you do not have a Savings.com API Key you must apply [HERE.](http://ee.savings.com/about/affiliates/application "Sign up for the Savings.com Affiliate Program!")** 
 
 Plugin Installation Instructions 
 
-1. Upload the file to the `/wp-content/plugins/` directory. 
+1. From the WP Admin panel, simply search for Savings.com and download the plugin. 
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to the Setting Menu and Select Savings.com 
 4. Enter your Savings.com provided API Key, select correct region (US/UK) and hit Submit. 
