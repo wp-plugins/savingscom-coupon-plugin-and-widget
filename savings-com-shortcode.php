@@ -249,7 +249,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		if(isset($deals)) {
 		$i=1; $now = getdate(time());
 		
-		if(!$$merchant_id) {
+		if(!$merchant_id) {
 		
 		  if(is_array($deals)) {shuffle($deals);}
 		  }
