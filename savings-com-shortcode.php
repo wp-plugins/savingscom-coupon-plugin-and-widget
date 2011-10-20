@@ -90,7 +90,7 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
   }
   if($final_params['merchant_ids']!='') {
     $final_params['category_ids'] = array();
-    $final_params['predefined_query']='';
+    $final_params['predefined_query']='V2_SCORE';
   }
   if($final_params['keyword']!='') {
     $final_params['category_ids'] = array();
