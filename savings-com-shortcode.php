@@ -248,7 +248,11 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		}
 		if(isset($deals)) {
 		$i=1; $now = getdate(time());
+		
+		if(!$$merchant_id) {
+		
 		  if(is_array($deals)) {shuffle($deals);}
+		  }
 		foreach($deals as $deal){ //var_dump($deal->couponCode);
 		  $deal->expireDate = (is_object($deal->expireDate))?"0":$deal->expireDate;
 		  $date = explode('+',$deal->expireDate); $date= getdate(strtotime($date[0])); 
