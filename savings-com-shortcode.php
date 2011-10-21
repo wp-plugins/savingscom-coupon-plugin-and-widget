@@ -253,6 +253,13 @@ function savings_com_shortcode_handler( $shortcode_atts ) {
 		
 		  if(is_array($deals)) {shuffle($deals);}
 		  }
+		  else {
+			$final_params['predefined_query']='TOP_DEAL';
+			$deals_data_second = savings_com_get_data( 'getDeals' , $final_params );
+			$deals_second = $deals_data->out->deals;
+			
+			$deals = array_merge($deals_second,$deals);
+		  }
 		foreach($deals as $deal){ //var_dump($deal->couponCode);
 		  $deal->expireDate = (is_object($deal->expireDate))?"0":$deal->expireDate;
 		  $date = explode('+',$deal->expireDate); $date= getdate(strtotime($date[0])); 
