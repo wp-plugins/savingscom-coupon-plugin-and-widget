@@ -7,17 +7,18 @@ Tested up to: 3.2.1
 Stable tag: trunk
 
 This Savings.com Plugin & Widget allows you to quickly create a coupon section on your WordPress website. It's kind of amazing. Really. 
+NOTE: THE PLUGIN IS CURRENTLY BEING UPDATED. For a silmilar solution, please look at our iFrame. 
 
 == Description == 
-**Before you begin, you must signup [HERE](http://ee.savings.com/about/affiliates/ "Sign up for the Savings.com Affiliate Program") in order to receive a Savings.com API Key needed to activate the plugin.** 
+** Please note, the WordPress Plugin is currently being updated. If you are interested in partnering with Savings.com we also offer an iFrame for qualifying affiliates. Please go here for more information[HERE](http://ee.savings.com/about/affiliates/ "Sign up for the Savings.com Affiliate Program")** 
 
 This is the absolute fastest, easiest and most effective way to add coupons to your WordPress site! Brought to you exclusively by Savings.com.
 
 
-Once you [are part of the Savings.com Affiliate program and receive your API Key](http://ee.savings.com/about/affiliates/ "Get my API key!") you can easily and quickly integrate the Savings.com WordPress Coupon Plugin and Widget into your website. This plugin and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!! **Take a look at the live demo [here.](http://www.savings-plugin-staging.com/staging1/testing-page/ "See plugin demo!")**
+With our iFrame you can easily and quickly integrate Savings.com deals into your website. This iFrame and optional widget, allows you to monetize your website by giving you access to Savings.com's database of over 20,000 deals and coupons from over 9,000 national merchants - all with a few simple clicks!! **Take a look at the live demo [here.](http://www.partnerwithsavings.com/iframe/ "See iFrame demo!")**
 
 
-Notable features:
+Notable features: (the iFrame has many similar features) 
 
 * Plugin automatically adapts to your theme with minimal CSS adjustments required.
 * Search the entire Savings.com Database by store, brand or keyword. Results are delivered straight to your website and not redirected externally!
@@ -28,9 +29,7 @@ Notable features:
 * No more expired coupons, links or deals for you to deal with!
 * The entire plugin has been optimized for SEO purposes and currently supports both the US and UK markets.
 
-The widget can be used as a standalone feature and has been optimized for the standard 300 X 250 sidebar ad size. Now you can finally replace those ugly sidebar ads with a fully functional widget that allows users to search for coupons by category or keyword!!
 
-When you are ready and have your [API key](http://ee.savings.com/about/affiliates/application "Partner with Savings.com!"), simply follow the instructions on the next tab. 
 
 *Note: We will be releasing FAQs and Best Practices shortly!*
 Plugin Website: www.partnerwithsavings.com 
