@@ -32,50 +32,17 @@ Notable features: (the iFrame has many similar features)
 
 
 *Note: We will be releasing FAQs and Best Practices shortly!*
-Plugin Website: www.partnerwithsavings.com 
+Plugin Website: www.partnerwithsavings.com/iframe 
 
 == Installation ==
 
-1. This section describes how to install the plugin & widget and get it working. Note, you can have any combination of the plugin or widget active and working together. 
-
-**If you do not have a Savings.com API Key you must apply [HERE.](http://ee.savings.com/about/affiliates/application "Sign up for the Savings.com Affiliate Program!")** 
-
-Plugin Installation Instructions 
-
-1. From the WP Admin panel, simply search for Savings.com and download the plugin. 
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to the Setting Menu and Select Savings.com 
-4. Enter your Savings.com provided API Key, select correct region (US/UK) and hit Submit. 
-5. Customize your preferences 
-6. Copy the default shortcode (or the custom shortcode) in the appropriate page (HTML or Visual Tab). 
-7. Make money, feed family, be happy. 
-
-Widget Installation Instruction
-
-1. Follow steps 1 - 4 above to ensure the plugin is activated and authorized.
-2. Go to the Appearance > Widgets Menu
-3. Drag the Savings.com Widget into your sidebar (it should be at least 330 Pixels wide) 
-4. Customize the widget (title, main category to load, # of items to load)
-5. Save.
-6. Make every other website jealous that your widget makes you money and it isn't ugly. 
-
-*You can also take a look at the instructions with screenshots at the plugin website [here.](http://www.savings-plugin-staging.com/staging1/installation-instructions/ "Plugin Instructions")*
 
 
 == Frequently Asked Questions ==
 
-FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings.com 
+FAQS and Best Practices are coming shortly. For now visit www.partnerwithsavings.com/iframe 
 
 == Screenshots ==
-1. Screenshots are soooooo 80s. **Take a look at the future with our fancy live demo <a href=\"http://www.savings-plugin-staging.com/staging1/testing-page/\" target=\"_blank\" title=\"See live demo! \">here</a>.**  
-Or take a look at one of these websites below that have already have the plugin up and running:   
-
-
-*   FrugalFinders.com: <a href=\"http://frugalfinders.com/store-coupons-codes/ \" target=\"_blank\">http://frugalfinders.com/store-coupons-codes/ </a>
-*   PassionForSavings.com: <a href=\"http://www.passionforsavings.com/online-coupon-codes/ \" target=\"_blank\">http://www.passionforsavings.com/online-coupon-codes/ </a>
-*   MomsNeedToKnow.com: <a href=\"http://www.momsneedtoknow.com/store-coupons-and-codes/ \" target=\"_blank\">http://www.momsneedtoknow.com/store-coupons-and-codes/ </a>
-
-And many more!
 
 == Changelog ==
 
