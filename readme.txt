@@ -6,7 +6,7 @@ Requires at least: 2.9.1
 Tested up to: 3.2.1
 Stable tag: trunk
 
-This Savings.com Plugin & Widget allows you to quickly create a coupon section on your WordPress website. It's kind of amazing. Really. 
+
 **PLEASE NOTE THE PLUGIN IS CURRENTLY BEING UPDATED. For a silmilar solution, please look at our iFrame at www.partnerwithsavings.com/iframe** 
 
 == Description == 
